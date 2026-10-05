@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>here u find all the articles</h1>
+    <hr>
+
+    <div style="background-color: aquamarine;display: flex;flex-direction: column;gap: 4px;color: black;padding: 20px;">
+     <% for (let i in allArticles) { %>
+        <div style="background-color: cadetblue;border-radius: 15px;display: flex;gap: 30px; padding: 10px;">
+    <h2><%=allArticles[i].articleTitle %></h2>
+    <p><%=allArticles[i].articleBody %></p>
+    </div>
+  <% } %>
+</div>
+
+
+</body>
+</html>
